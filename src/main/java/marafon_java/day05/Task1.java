@@ -20,33 +20,3 @@ public class Task1 {
         System.out.println("Год выпуска автомобиля: " + car1.getYearOfRelease());
     }
 }
-
-class Car {
-    private String model;
-    private String color;
-    private int yearOfRelease;
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String carModel) {
-        model = carModel;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        color = color;
-    }
-
-    public int getYearOfRelease() {
-        return yearOfRelease;
-    }
-
-    public void setYearOfRelease(int yearOfRelease) {
-        yearOfRelease = yearOfRelease;
-    }
-}
