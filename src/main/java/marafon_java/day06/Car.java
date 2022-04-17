@@ -15,14 +15,15 @@ public class Car {
         this.yearOfRelease = yearOfRelease;
     }
 
-    int yearDifference(int inputYear){
-        if (inputYear <= yearOfRelease) {
-            int Difference =yearOfRelease - inputYear;
-            return Difference;
-        } else {
-            int Difference = inputYear - yearOfRelease;
-            return Difference;
-        }
+    public int yearDifference(int inputYear){
+        return Math.abs(inputYear - yearOfRelease);
+//        if (inputYear <= yearOfRelease) {
+//            int Difference =yearOfRelease - inputYear;
+//            return Difference;
+//        } else {
+//            int Difference = inputYear - yearOfRelease;
+//            return Difference;
+//        }
     }
 
     public String getModel() {
