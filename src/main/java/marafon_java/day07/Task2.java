@@ -60,6 +60,11 @@ public class Task2 {
         System.out.println("Количество игроков на поле: " + Player.getCountPlayers());
         player1.info();
 
+        // Проверяем вызов метода run после ухода игрока с поля.
+        System.out.println("У 1 игрока стамины: " + player1.getStamina() + ". Количество игроков на поле: " + Player.getCountPlayers());
+        player1.run();
+        System.out.println("У 1 игрока стамины: " + player1.getStamina() + ". Количество игроков на поле: " + Player.getCountPlayers());
+
     }
 
 }

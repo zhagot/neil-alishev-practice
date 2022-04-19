@@ -39,10 +39,8 @@ public class Player {
     }
 
     public void run() {
-        stamina--;
-        if (stamina < 1) {
-            countPlayers--;
-        }
+        if (stamina > 0) stamina--;
+        if (stamina == 1) countPlayers--;
     }
 
     public void info() {
